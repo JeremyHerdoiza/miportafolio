@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Básico - Jeremy Herdoiza (Solo HTML5)</title>
+</head>
+
+<body>
+    <header>
+        <h1>Jeremy Herdoiza</h1>
+        <p>Estudiante de Ingeniería de Sistemas | Iniciando mi camino en el Desarrollo Web</p>
+        <img src="avatar-jeremy.jpg" alt="Fotografía de perfil de Jeremy Herdoiza, estudiante" title="Mi avatar personal" width="150" height="150">
+        <hr>
+    </header>
+
+    <nav>
+        <a href="#sobremi">Sobre Mí</a> |
+        <a href="#intereses">Intereses y Metas</a> |
+        <a href="#habilidades">Habilidades</a> |
+        <a href="#multimedia">Presentación</a> |
+        <a href="#contacto">Contacto</a>
+        <hr>
+    </nav>
+
+    <main>
+        <section id="sobremi">
+            <h2>Acerca de Jeremy</h2>
+            <p>Soy Jeremy Herdoiza, actualmente <strong>estudiante</strong> de Ingeniería de Sistemas. Recién he comenzado mi formación en desarrollo y estoy aprendiendo las bases de la programación.</p>
+            <p>He adquirido las nociones básicas de HTML y me considero una persona <em>proactiva</em>. Mi meta inicial es dominar los fundamentos para <mark>crear mi primera página web funcional</mark>. Estoy en constante búsqueda de conocimientos básicos.</p>
+        </section>
+
+        <section id="intereses">
+            <h2>Intereses y Metas de Aprendizaje</h2>
+            
+            <h3>Intereses:</h3>
+            <ul>
+                <li>Aprender a usar HTML y CSS correctamente.</li>
+                <li>Conocer la lógica de la programación.</li>
+                <li>Entender cómo funcionan las bases de datos.</li>
+            </ul>
+            
+            <h3>Logros (Básicos):</h3>
+            <ol>
+                <li>Completé el módulo de Introducción a HTML5 en mi curso.</li>
+                <li>Pude corregir errores en mi primer código.</li>
+                <li>Obtuve una calificación destacada en mi examen de lógica básica.</li>
+            </ol>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas (Etapa Inicial)</h2>
+            <table border="1" width="10%">
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Conocimiento</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desarrollo Web</td>
+                        <td>HTML5 (Introductorio)</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>Programación</td>
+                        <td>Lógica Básica</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>Herramientas</td>
+                        <td>Uso de Navegadores y Editores de Texto</td>
+                        <td>Intermedio</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Me enfoco en dominar los fundamentos de cada área.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="multimedia">
+            <h2>Presentación Multimedia</h2>
+            <p>Una breve presentación (audio simulado).</p>
+            <audio controls>
+                <source src="audio/WhatsApp Ptt 2025-11-17 at 5.06.06 PM.ogg" type="audio/mpeg">
+                <p>Su navegador no soporta el elemento de audio.</p>
+            </audio>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="POST">
+                
+                <fieldset>
+                    <legend>Información de Contacto</legend>
+                    <label for="nombre">Nombre: (*)</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Su nombre completo" required><br><br>
+
+                    <label for="correo">Correo: (*)</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@dominio.com" required><br><br>
+                    
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad" min="18" max="99" value="20"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles Adicionales</legend>
+                    <p>Género:</p>
+                    <input type="radio" id="masculino" name="genero" value="masculino" checked>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label><br>
+                    <input type="radio" id="otro" name="genero" value="otro">
+                    <label for="otro">Prefiero no decir</label><br><br>
+
+                    <label for="intereses">Motivo de Contacto:</label><br>
+                    <select id="intereses" name="intereses">
+                        <option value="estudio" selected>Consulta de Estudio</option>
+                        <option value="du">Duda sobre un Código</option>
+                        <option value="otro">Otro</option>
+                    </select><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensaje</legend>
+                    <label for="comentarios">Comentarios:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Escriba aquí su mensaje..."></textarea><br><br>
+                </fieldset>
+                
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Limpiar Campos">
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2025 Jeremy Herdoiza. Todos los derechos reservados.</p>
+        <p>Conéctate conmigo:</p>
+        <a href="https://github.com/JeremyHerdoiza?tab=repositories" target="_blank">GitHub</a> |
+        <a href="https://www.facebook.com/profile.php?id=100092550512111" target="_blank">facebook</a> |
+        <a href="https://myaccount.google.com/u/2/?utm_source=OGB&utm_medium=app&pageId=none&pli=1">Correo</a>
+    </footer>
+
+</body>
+</html>
